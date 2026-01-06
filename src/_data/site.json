@@ -1,0 +1,30 @@
+{
+  "name": "personal-portfolio",
+  "shortName": "WG",
+  "url": "https://gla.dst.one.netlify.app",
+  "canonical": "https://gla.dst.one.netlify.app",
+  "googleSiteVerification": "google-site-verification-code",
+  "lang": "en",
+  "locale": "en_US",
+  "title": "Will Gladstone - Data Engineer",
+  "themeColor": "#f8fafc",
+  "backgroundColor": "#031235",
+  "mainNavigation": [
+    {
+      "name": "About",
+      "url": "#about"
+    },
+    {
+      "name": "Work",
+      "url": "#projects"
+    },
+    {
+      "name": "Skills",
+      "url": "#skills"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ]
+}

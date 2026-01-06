@@ -1,0 +1,39 @@
+{
+  "title": "About Me",
+  "items": [
+    {
+      "label": "Role",
+      "value": "Data Engineer & Systems Architect"
+    },
+    {
+      "label": "Education",
+      "values": [
+        {
+        "type": "PhD",
+        "label": "Bioinformatics",
+        "source": "Wesleyan University",
+        "date": "2013"
+        },
+        {
+          "type": "BA",
+          "label": "Computer Science & Economics",
+          "source": "Wesleyan University",
+          "date": "2001"
+        }
+      ]
+    },
+    {
+      "label": "Location",
+      "value": "New York, NY"
+    },    
+    {
+      "label": "Focus",
+      "value": "Machine Learning, Relational Thinking, Database Systems,"
+    },
+    {
+      "label": "",
+      "value": "Data Pipelines, Systems Automation, Software Development"
+    }
+  ],
+  "textHtml": "I specailize in working with, organizing and analyzing large data sets. I love organizing data to scale and building projects around flexible architecture that can provide an environment needed for all aspects of projects working with big data. My work is driven by a philosophy that thoughtful relational data design is the single most important step in delivering efficient and scalable data systems. I have over 25 years of experience architecting and implementing data pipelines, ETL processes, data warehouses and software that empower organizations to harness the full potential of their data."
+}

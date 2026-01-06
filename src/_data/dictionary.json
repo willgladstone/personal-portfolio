@@ -1,0 +1,16 @@
+{
+  "hero": {
+    "primaryCta": {
+      "name": "View Work",
+      "url": "#projects"
+    },
+    "secondaryCta": {
+      "name": "Get in Touch",
+      "url": "#contact"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": ""
+  }
+}

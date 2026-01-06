@@ -1,0 +1,44 @@
+<!-- About Section -->
+<section id="about" class="py-20 border-t border-border-light dark:border-border-dark">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-3xl font-bold mb-4">{{ about.title }}</h2>
+      <p class="text-muted-foreground-light dark:text-muted-foreground-dark mb-4">{{ about.textHtml | safe }}</p>
+    </div>
+    <div class="bg-muted-light dark:bg-muted-dark rounded-lg p-6 overflow-auto" aria-hidden="true">
+      <div class="text-sm text-muted-foreground-light dark:text-muted-foreground-dark min-w-[500px]">
+        <code>
+          <span class="text-green-700 dark:text-green-500">will.gl@dst.one</span>:<span class="text-blue-500">~</span>$ stat will<br/>
+          <br/> -----------<br/>
+          {% for item in about.items %}
+              {% if item.values %}
+                {% for entry in item.values %}
+                  <dl class="flex mt-1 flex-nowrap">
+                  {% if (loop.first) and (item.label.length > 0) %}
+                    <dt class="font-bold w-24">{{ item.label }}:</dt>                    
+                  {% else %}
+                    <dt class="w-24"></dt>  
+                  {% endif %}
+                  {% if entry.label %}
+                    <dd>{{ entry.type }} {{ entry.label }}, {{ entry.source }} - {{ entry.date }}</dd>
+                  {% else %}
+                    <dd>{{ entry }}</dd>
+                  {% endif %}
+                  </dl>
+                {% endfor %}
+              {% else %}
+                <dl class="flex mt-1 flex-nowrap">
+                {% if item.label.length > 0 %}
+                  <dt class="font-bold w-24">{{ item.label }}:</dt>                    
+                {% else %}
+                  <dt class="w-24"></dt>  
+                {% endif %}
+                <dd>{{ item.value }}</dd>
+                </dl>
+              {% endif %}
+          {% endfor %}
+        </code>
+      </div>
+    </div>
+  </div>
+</section>
